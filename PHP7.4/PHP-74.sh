@@ -6,7 +6,11 @@ ip="$3"
 home_dir="$4"
 docroot="$5"
 
-a2dismod php*
+a2dismod php5.6
+a2dismod php7.1
+a2dismod php7.2
+a2dismod php7.3
+a2dismod php7.4
 a2enmod php7.4
 service apache2 restart
 
